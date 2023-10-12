@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+  <script src="grass.js"></script>
+  <script src="grassEater.js"></script>
+  <script src="superdog.js"></script>
+  <script src="predator.js"></script>
+  <script src="script.js"></script>
+  <script src="bomb.js"></script>
+  <script src="superman.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Game Of Life</h1>
+  <button type="button" onclick="sayHello()">
+    <span></span>Info
+    <script>
+
+      function sayHello() {
+        alert(" Hello, I'm Garegin Hakobyan, I'm 14 years old, I'm the creator of this game. ")
+      }
+    </script>
+  </button>
+  <a style="padding: 0; width: 100px;" href="index.html">
+    <button><span></span>Game Restart</button>
+  </a>
+
+  <table>
+    <tr>
+      <th class="grass">Grass ☘️</th>
+      <th class="grassEater">Grass Eater 🐄</th>
+      <th class="superdog">Superdog 🐕‍🦺</th>
+      <th class="predator">Predator 🦕</th>
+      <th class="bomb">Bomb 💣</th>
+      <th class="superman">superman 🦸‍♀️</th>
+    </tr>
+    <tr>
+      <td class="grass">Խոտ: բազմանում է ազատ մատրիքսների վրա</td>
+      <td class="grassEater">Խոտակեր: Կարող է շարժվել ազատ մատրիքսների վրա,
+        ունի իր սեփական Էներգիա, որը աճում է Խոտ ուտելու հաշվին և
+        նվազում է շարժման ժամանակ</td>
+      <td class="superdog">Շուն: Կարող է շարժվել ազատ մատրիքսների և խոտերի վրա,
+        ունի իր սեփական Էներգիա, որը աճում է ամենակերներին ոչնչացնելու հաշվին և
+        նվազում է շարժման ժամանակ: Պաշտպանում է Խոտակերներին</td>
+      <td class="predator">Ամենակեր: Կարող է շարժվել ազատ մատրիքսների վրա,
+        ունի իր սեփական Էներգիա, որը աճում է Խոտ և Խոտակեր ուտելու հաշվին և
+        նվազում է շարժման ժամանակ</td>
+      <td class="bomb">Պայթուցիկ: Տեղադրվում է մատրիքսի պատահական վանդակներում,
+        երբ Խոտակերը կանգնում է Պայթուցիկի վրա խաղը նորից է սկսվում։
+
+      </td>
+      <td class="superman">Սուպեռմարդ: Նա կարող է շարժվել ազատ մատրիքսների վրա,
+        Պայթուցիկ հայտնաբելու ժամանակ ոչնչացնում է այն, պաշտպանելով Խոտակերներին։ </td>
+    </tr>
+  </table>
+</body>
+
+</html>
